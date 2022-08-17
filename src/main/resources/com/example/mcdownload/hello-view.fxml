@@ -1,20 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.mcdownload.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Grill" onAction="#grillButt"/>
-    <Button text="Friteza" onAction="#fritezaButt"/>
-    <Button text="Iniciator" onAction="#iniciatorButt"/>
-    <Button text="Assembler" onAction="#assemblerButt"/>
-    <Button text="Finisher" onAction="#finisherButt"/>
+<VBox alignment="CENTER" prefHeight="315.0" prefWidth="305.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="com.example.mcdownload.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <HBox prefHeight="63.0" prefWidth="202.0">
+        <Button onAction="#iniciatorButt" prefHeight="63.0" prefWidth="83.0" text="Iniciator"/>
+        <Button onAction="#assemblerButt" prefHeight="63.0" prefWidth="97.0" text="Assembler"/>
+        <Button onAction="#finisherButt" prefHeight="63.0" prefWidth="95.0" text="Finisher"/>
+    </HBox>
+    <HBox prefHeight="66.0" prefWidth="182.0">
+        <Button onAction="#grillButt" prefHeight="66.0" prefWidth="91.0" text="Grill"/>
+        <Button onAction="#fritezaButt" prefHeight="66.0" prefWidth="106.0" text="Friteza"/>
+        <Button mnemonicParsing="false" prefHeight="66.0" prefWidth="101.0" text="Firemna kultúra"
+                textAlignment="CENTER" wrapText="true"/>
+    </HBox>
+    <Pane prefHeight="78.0" prefWidth="202.0">
+        <AnchorPane layoutX="-7.0" layoutY="-7.0" prefHeight="92.0" prefWidth="77.0"/>
+        <AnchorPane layoutX="94.0" layoutY="-7.0" prefHeight="92.0" prefWidth="77.0"/>
+
+        <Label fx:id="welcomeText" layoutX="181.0" layoutY="50.0" prefHeight="28.0" prefWidth="77.0" text="version 0.4">
+<font>
+    <Font size="14.0"/>
+</font>
+        </Label>
+    </Pane>
 </VBox>
