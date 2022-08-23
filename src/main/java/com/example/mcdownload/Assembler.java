@@ -1,4 +1,4 @@
 package com.example.mcdownload;
 
-public class Iniciator {
+public class Assembler {
 }
