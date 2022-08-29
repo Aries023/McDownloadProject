@@ -13,14 +13,12 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-    <HBox prefHeight="63.0" prefWidth="202.0" style="-fx-background-color: #7AF58C;">
+    <HBox prefHeight="63.0" prefWidth="202.0">
         <Button onAction="#iniciatorButt" prefHeight="63.0" prefWidth="83.0" style="-fx-background-color: #F6C845;" text="Iniciator" />
         <Button onAction="#assemblerButt" prefHeight="63.0" prefWidth="97.0" style="-fx-background-color: #F6C845;" text="Assembler" />
         <Button onAction="#finisherButt" prefHeight="63.0" prefWidth="95.0" style="-fx-background-color: #F6C845;" text="Finisher" />
     </HBox>
-    <HBox prefHeight="66.0" prefWidth="182.0" style="-fx-background-color: #7AF58C;">
-        <Button onAction="#grillButt" prefHeight="66.0" prefWidth="91.0" style="-fx-background-color: #F6C845;" text="Grill" />
-        <Button onAction="#fritezaButt" prefHeight="66.0" prefWidth="106.0" style="-fx-background-color: #F6C845;" text="Friteza" />
+    <HBox alignment="CENTER" prefHeight="66.0" prefWidth="182.0">
         <Button mnemonicParsing="false" prefHeight="66.0" prefWidth="101.0" style="-fx-background-color: #F6C845;" text="Firemna kultúra" textAlignment="CENTER" wrapText="true" />
     </HBox>
     <Pane prefHeight="78.0" prefWidth="202.0">
@@ -32,5 +30,10 @@
     <Font size="14.0" />
 </font>
         </Label>
+      <Label layoutX="193.0" layoutY="40.0" text="Aries023">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
     </Pane>
 </VBox>
